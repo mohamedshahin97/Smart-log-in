@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <meta http-equiv="content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/all.min.css" />
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./css/main.css" />
+
+</head>
+<body class="bg-nave">
+  <!-- login open -->
+  <div class="container pt-5" id="login-page">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <div class="login shadow-lg text-center p-5">
+          <h1 class="my-3 text-info">Smart Login System</h1>
+          <input type="email" id="Email" placeholder="Enter your Email" required class="text-white form-control bg-transparent my-3"/>
+          <input type="password" id="Passowrd" placeholder="Enter your Password" required class="text-white form-control bg-transparent my-3"/>
+          <p id="Error"></p>
+          <button class="btn btn-outline-info form-control my-3" id="LOGIN" type="submit">Login</button>
+          <p class="text-white my-3">Don’t have an account?
+            <button id="signupBTN" href="" class="text-white my-3 border border-0 bg-transparent">
+              Sign Up
+            </button>
+          </p>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+  <!-- login close -->
+
+  <!-- Registration open -->
+  <div class="container pt-5" id="Registration-page">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <div class="login shadow-lg text-center p-5">
+          <h1 class="my-3 text-info">Registrate your Email</h1>
+          <div class="form">
+            <input type="text" id="yourName" placeholder="Enter your Name" required class="text-white form-control bg-transparent my-3"/>
+            <input type="email" id="Emailregist" placeholder="Enter your Email" required class="text-white form-control bg-transparent my-3"/>
+            <input type="password" id="Passowrdregist" placeholder="Enter your Password" required class="text-white form-control bg-transparent my-3"/>
+            <p id="exist"></p>
+            <button class="btn btn-outline-info form-control my-3" id="Sign-Up">
+              Sign Up
+            </button>
+          </div>
+          <p class="text-white my-3">
+            You have an account?
+            <button id="signInBTN" href="" class="text-white my-3 border border-0 bg-transparent">
+              Sign In
+            </button>
+          </p>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+  <!-- Registration close -->
+
+  <!-- Home open -->
+  <div id="Home">
+    <nav class="navbar navbar-expand-lg bg-nave shadow-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand text-white" href="#">SMART LOGIN</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+          <form class="d-flex" role="search">
+            <button class="btn btn-outline-warning" type="submit" id="logout">
+              <span style="color: rgb(182,182,182);">Logout</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="name-welcome d-flex justify-content-center align-items-center text-white text-center vh-100">
+      <div id="username" class="shadow-lg col-6 p-5"></div>
+    </div>
+  </div>
+  <!-- Home close -->
+
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

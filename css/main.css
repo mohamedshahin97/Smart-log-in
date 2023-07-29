@@ -1,0 +1,23 @@
+.bg-nave {
+    background-color: #24353f;
+}
+
+.text-white::placeholder {
+    color: rgb(182,182,182);
+}
+
+#Home {
+    display: none;
+}
+
+#Registration-page {
+    display: none;
+}
+
+#signupBTN:hover {
+    text-decoration: underline;
+}
+
+#signInBTN:hover {
+    text-decoration: underline;
+}
